@@ -37,6 +37,7 @@ function dishquestController($http, dishquestFactory) {
         });
     };
 
+    //CALL THE FUNCTION AGAIN WHEN REFRESHED
     dishquest.info();
 
     //SEARCH FOR FOOD
@@ -64,7 +65,7 @@ function dishquestController($http, dishquestFactory) {
 
     //ADD FRIENDS
     dishquest.addFriend = function($index) {
-      console.log(dishquest.friends[$index]);
+        console.log(dishquest.friends[$index]);
         $http({
             method: 'POST',
             url: '/addfriends',
@@ -120,7 +121,6 @@ function dishquestController($http, dishquestFactory) {
 
     //DELETE ITEM FROM FAV PLACES
     dishquest.deleteVenue = function($index) {
-        console.log(dishquest.profile.favoritePlaces[$index]);
         $http({
             method: 'PUT',
             url: '/profile',
@@ -128,7 +128,7 @@ function dishquestController($http, dishquestFactory) {
                 favoritePlaces: dishquest.profile.favoritePlaces[$index]
             }
         }).then(function(res) {
-            console.log(dishquest.profile);
+            console.log(res.data);
         }, function(err) {
             // DO NOT FORGET!!!! A ERROR CALLBACK
             // when things go bad, you need this!!!!!!!!
@@ -136,6 +136,25 @@ function dishquestController($http, dishquestFactory) {
         });
 
         console.log("Deleted favorite");
+    };
+
+    //DELETE FRIEND
+    dishquest.deleteFriend = function($index) {
+        $http({
+            method: 'PUT',
+            url: '/showfriends',
+            data: {
+                friends: dishquest.profile.friends[$index]
+            }
+        }).then(function(res) {
+            console.log(res.data);
+        }, function(err) {
+            // DO NOT FORGET!!!! A ERROR CALLBACK
+            // when things go bad, you need this!!!!!!!!
+            console.error(err);
+        });
+
+        console.log("Deleted friend");
     };
 
 }

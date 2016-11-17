@@ -10,7 +10,8 @@ html {
 
 .loading {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #D70026; }
 
 #wrapper {
   min-height: 100%;
@@ -72,12 +73,14 @@ p {
   bottom: 0;
   left: 0; }
 
-.navbar-brand {
+.navbar-default .navbar-brand {
   font-family: "Ravi Prakash", cursive;
   text-shadow: #D70026 0.3em 0.3em 0.3em;
   color: #F8F5F2;
   display: inline;
   font-size: 25px; }
+  .navbar-default .navbar-brand:hover {
+    color: #EDB83d; }
 
 .nav {
   background-color: #000B29; }
@@ -86,6 +89,24 @@ li a {
   color: #D70026;
   border-radius: 5px; }
   li a:hover {
+    color: #EDB83d; }
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+
+.dropdown-menu > li > a {
+  color: #D70026; }
+  .dropdown-menu > li > a:hover {
+    background-color: #000B29;
     color: #EDB83d; }
 
 /*---COMPONENTS IMPORTS---*/
@@ -97,34 +118,12 @@ li a {
   background-repeat: no-repeat;
   color: #fff;
   text-shadow: black 0.3em 0.3em 0.3em;
-  padding-top: 12%;
-  padding-bottom: 10%; }
-
-.jumbotronabout {
-  margin-bottom: 0;
-  background-image: url("/img/coffeeabout.jpg");
-  background-position: 0 45%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  text-shadow: black 0.3em 0.3em 0.3em;
-  padding-top: 12%;
-  padding-bottom: 10%; }
+  padding-top: 15%;
+  padding-bottom: 15%; }
 
 .jumbotroncontact {
   margin-bottom: 0;
   background-image: url("/img/coffeecontact.jpg");
-  background-position: 0 45%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  text-shadow: black 0.3em 0.3em 0.3em;
-  padding-top: 12%;
-  padding-bottom: 10%; }
-
-.jumbotronregister {
-  margin-bottom: 0;
-  background-image: url("/img/coffeeregister.jpg");
   background-position: 0 45%;
   background-size: cover;
   background-repeat: no-repeat;

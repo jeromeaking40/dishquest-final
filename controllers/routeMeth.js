@@ -144,6 +144,26 @@ module.exports = {
         res.send('Profile updated');
 
     },
+    //DELETE FRIEND
+    deleteFriend: function(req, res) {
+        console.log(req.body.friends);
+
+        User.update({
+            email: req.session.email
+        }, {
+            $pull: {
+                "friends": req.body.friends
+            }
+        }, function(err, user) {
+            if (err) {
+                console.error(err);
+            } else {
+                console.log(user);
+            }
+        });
+        res.send('Profile updated');
+
+    },
     //SET SESSION FOR LOGGED IN USERS
     middlewares: {
         session: function(req, res, next) {

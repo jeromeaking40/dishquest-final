@@ -24,6 +24,9 @@ function Router($routeProvider) {
         .when("/addfriends/", {
             templateUrl: "/views/addfriends.html",
         })
+        .when("/showfriends/", {
+            templateUrl: "/views/showfriends.html",
+        })
         .when("/profile", {
             templateUrl: "/views/profile.html"
         })
