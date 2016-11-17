@@ -1,0 +1,19 @@
+.formreset {
+    max-width    : 300px;
+    margin       : 10px auto;
+    padding      : 10px 20px;
+    background   : #f4f7f8;
+    border-radius: 5px;
+    font-family  : $stack-raleway;
+    margin-top   : 25px;
+}
+
+label {
+    display      : block;
+    margin-bottom: 8px;
+}
+
+label.light {
+    font-weight: 300;
+    display    : inline;
+}

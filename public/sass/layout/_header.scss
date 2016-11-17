@@ -1,0 +1,20 @@
+.navbar-brand {
+    font-family: $stack-ravi;
+    text-shadow: $secondary-color 0.3em 0.3em 0.3em;
+    color      : $hover-color;
+    display    : inline;
+    font-size  : 25px;
+}
+
+.nav {
+    background-color: $primary-color;
+}
+
+li a {
+    color        : $secondary-color;
+    border-radius: 5px;
+
+    &:hover {
+        color: $third-color;
+    }
+}

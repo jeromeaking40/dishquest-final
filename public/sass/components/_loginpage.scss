@@ -1,0 +1,36 @@
+.login {
+    color      : $hover-color;
+    font-family: $stack-ravi;
+    text-shadow: $secondary-color 0.3em 0.3em 0.3em;
+}
+
+.loginform {
+    background-color: $primary-color;
+}
+
+.recover {
+    color: $secondary-color;
+
+    &:hover {
+        color: $third-color;
+    }
+}
+
+.registerredirect {
+    color: $secondary-color;
+
+    &:hover {
+        color: $third-color;
+    }
+}
+
+label {
+    display      : block;
+    margin-bottom: 8px;
+    font-family  : $stack-raleway;
+}
+
+label.light {
+    font-weight: 300;
+    display    : inline;
+}

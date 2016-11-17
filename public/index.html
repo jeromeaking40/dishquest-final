@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app='DishQuest'>
+    <head>
+        <meta charset="utf-8">
+        <title>DishQuest</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Ravi+Prakash" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/css/main.css" media="screen" title="no title">
+        <link rel="shortcut icon" href="/css/dishquest.ico" type="image/x-icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+        <script src="/js/module.dishquest.js"></script>
+        <script src="/js/module.login.js"></script>
+        <script src="/js/controller.dishquest.js"></script>
+        <script src="/js/factory.dishquest.js"></script>
+    </head>
+    <body ng-controller='dishquestCtrl as dishquest'>
+
+        <!--NAV-->
+        <div id="wrapper">
+            <a class="navbar-brand" href="#/"><img id="logo" src="img/dishquest.png" alt="logo" height="30">DishQuest</a>
+            <div ng-switch="dishquest.signedIn">
+                <ul class="nav nav-pills nav-justified" ng-switch-when="false">
+                    <li>
+                        <a href="/views/login.html">LOG IN</a>
+                    </li>
+                    <li>
+                        <a href="#/register">REGISTER</a>
+                    </li>
+                </ul>
+
+                <ul class="nav nav-pills nav-justified" ng-switch-when="true">
+                    <li>
+                        <a href="#/search">SEARCH FOR FOOD</a>
+                    </li>
+                    <li>
+                        <a href="#/addfriends">ADD FRIENDS</a>
+                    </li>
+                    <li>
+                        <a href="/#/profile">PROFILE</a>
+                    </li>
+                    <li>
+                        <a href="/logout">LOGOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <!--END OF NAV-->
+
+            <!--PAGE CONTENT-->
+            <div id="content">
+                <ng-view></ng-view>
+            </div>
+            <!--END OF PAGE CONTENT-->
+
+            <!-- FOOTER -->
+            <div id="footer">
+                <footer class="navbar-default">
+                    <div class="container-fluid text-center">
+
+                        <h5>Designed and Developed by Jerome King</h5>
+                        <a href="http://www.github.com/jeromeaking40">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="http://www.linkedin.com/in/jerome-king-7b6b8a92">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:jeromeaking40@yahoo.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                </footer>
+            </div>
+            <!--END OF FOOTER-->
+        </div>
+
+    </body>
+</html>

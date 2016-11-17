@@ -1,0 +1,22 @@
+.fa {
+    font-size  : 2.5em;
+    padding-top: 20px;
+    color      : $secondary-color;
+    padding-top: 20px;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.navbar-default .fa {
+    color: #FFF;
+
+    &:hover {
+        color: $third-color;
+    }
+}
+
+.fa.fa-trash-o {
+    font-size: 1.5em;
+}

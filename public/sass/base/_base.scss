@@ -1,0 +1,57 @@
+body,
+html {
+    height: 100%;
+}
+
+#logo {
+    margin : -3px 5px -3px -3px;
+    display: inline;
+}
+
+.loading {
+    display: block;
+    margin : 0 auto;
+}
+
+#wrapper {
+    min-height: 100%;
+    position  : relative;
+}
+
+#content {
+    padding-bottom: 100px;
+    /* Height of the footer element */
+}
+
+.coffee {
+    padding-top: 20px;
+    font-size  : 18px;
+}
+
+hr {
+    margin-top   : 20px;
+    margin-bottom: 20px;
+    border       : 0;
+    border-top   : 1px solid #eDe;
+}
+
+h5 {
+    color      : $hover-color;
+    font-family: $stack-raleway;
+}
+
+.logout {
+    color: $primary-color;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+.page-header {
+    border-bottom: 3px double #8c8b8b;
+}
+
+.style2 {
+    border-top: 3px double #8c8b8b;
+}

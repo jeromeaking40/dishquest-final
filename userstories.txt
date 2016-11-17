@@ -1,0 +1,19 @@
+Dishquest User Stories
+-User signs up for site
+  -User logs in to site, reaches profile page
+-User searches for dish : API Integration
+  -Search Query returns list of places that serve that dish : API Integration
+  -User can go to link of venue website and see menu : API Integration
+  -User can add venue to list of fav restaurants : API Integration
+-User can add friends and see there fav restaurants
+
+Project Plan
+-API Integration - YELP
+-Landing Page, Register, Login, Profile Page, Search
+-Design Implementation : Color Palette(TBD), Logo, Icons, Fonts - Ravi Prakash
+
+Tools
+-Bootstrap
+-SASS
+-Nodemailer Password Reset
+-Notie JS Alert Library

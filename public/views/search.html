@@ -1,0 +1,60 @@
+<div class="container">
+    <h1 class="text-center venue-search">Search for food in the Colorado area below</h1>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <!--SEARCH BAR-->
+            <form ng-submit="dishquest.find()">
+                <div class="input-group search text-center">
+                    <input type="text" class="form-control" placeholder="Search for food." ng-model="dishquest.search" name="srch-term" id="srch-term">
+
+                    <div class="input-group-btn">
+                        <button class="btn btn-default btn-success" type="submit" class="fade">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!--LOADING GIF-->
+  <img src="../img/dishquest.gif" class="loading" ng-show="dishquest.loading">
+
+            <!--VENUE SEARCH-->
+            <div ng-repeat="venue in dishquest.foodInfo.businesses">
+                <div class="row marketing">
+                    <div class="col-lg-6 text-center">
+                        <h2>
+                            <p>
+                                Name:
+                                {{ venue.name }}</p><br>
+                            <p>
+                                Phone
+                                {{ venue.display_phone }}</p><br>
+                            <p>
+                                Url:
+                                <a class="link" ng-href="{{ venue.url }}">Website</a>
+                            </p><br>
+                            <p>
+                                Rating:
+                                {{ venue.rating }}</p><br>
+                            <p>
+                                Rating Snips:
+                                {{ venue.snippet_text }}</p><br>
+                            <p>
+                                Category:</p>
+                            <p ng-repeat="category in venue.categories track by $index">
+                                {{category}}</p><br>
+                            <p>Location:</p><hr class="style2">
+                            <p ng-repeat="locate in venue.location.display_address">
+                                {{locate}}</p>
+                            <button class='btn' ng-click="dishquest.addVenue(venue.name)">Add to favorite places</button>
+                            <hr class="style2">
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

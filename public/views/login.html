@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="module.login">
+    <head>
+        <meta charset="utf-8">
+        <title>DishQuest</title>
+        <link rel="shortcut icon" href="/css/" type="image/x-icon">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+        <link rel="stylesheet" href="/css/main.css" media="screen" title="no title">
+        <link rel="shortcut icon" href="/css/dishquest.ico" type="image/x-icon">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+        <script src="/js/module.login.js"></script>
+    </head>
+
+    <body class="loginform" ng-controller="controller.login as login">
+        <!--LOGIN FORM-->
+        <h1 class="text-center login">
+          <a href="/"><img id="logo" src="/img/dishquest.png" alt="logo" height="60"></a>
+        </h1>
+
+        <form class="formregister" ng-submit="login.submit()">
+            <legend class="text-center">Log In</legend>
+
+            <label for="email">Email</label>
+            <input class="form-control" type="email" ng-model="login.email" placeholder=" Enter your email.."><br>
+
+            <label for="password">Password</label>
+            <input class="form-control" type="password" ng-model="login.password" placeholder="Enter your password..">
+
+            <button class="btn btn-defaultlogin" type="submit">LOG IN</button>
+            <a class="text-center recover" href="/views/forgot.html">Recover Password</a><hr>
+            <a href="/#/register">
+                <h5 class="registerredirect">Haven't registered? Sign up for a account</h5>
+            </a>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,320 @@
+/*---GLOBAL IMPORTS*/
+/*---BASE IMPORTS---*/
+body,
+html {
+  height: 100%; }
+
+#logo {
+  margin: -3px 5px -3px -3px;
+  display: inline; }
+
+.loading {
+  display: block;
+  margin: 0 auto; }
+
+#wrapper {
+  min-height: 100%;
+  position: relative; }
+
+#content {
+  padding-bottom: 100px;
+  /* Height of the footer element */ }
+
+.coffee {
+  padding-top: 20px;
+  font-size: 18px; }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eDe; }
+
+h5 {
+  color: #F8F5F2;
+  font-family: "Raleway", sans-serif; }
+
+.logout {
+  color: #000B29; }
+  .logout:hover {
+    color: #F8F5F2; }
+
+.page-header {
+  border-bottom: 3px double #8c8b8b; }
+
+.style2 {
+  border-top: 3px double #8c8b8b; }
+
+h1 {
+  font-family: "Raleway", sans-serif; }
+
+a {
+  font-family: "Raleway", sans-serif;
+  color: #D70026; }
+  a:hover {
+    color: #EDB83d; }
+
+.about {
+  font-family: "Ravi Prakash", cursive; }
+
+p {
+  font-family: "Raleway", sans-serif; }
+
+/*----FOOTER STYLES---*/
+.navbar-default {
+  background-color: #000B29; }
+
+#footer {
+  background-color: #000B29;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.navbar-brand {
+  font-family: "Ravi Prakash", cursive;
+  text-shadow: #D70026 0.3em 0.3em 0.3em;
+  color: #F8F5F2;
+  display: inline;
+  font-size: 25px; }
+
+.nav {
+  background-color: #000B29; }
+
+li a {
+  color: #D70026;
+  border-radius: 5px; }
+  li a:hover {
+    color: #EDB83d; }
+
+/*---COMPONENTS IMPORTS---*/
+.jumbotron {
+  margin-bottom: 0;
+  background-image: url("/img/marketing.jpg");
+  background-position: 0 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  padding-top: 12%;
+  padding-bottom: 10%; }
+
+.jumbotronabout {
+  margin-bottom: 0;
+  background-image: url("/img/coffeeabout.jpg");
+  background-position: 0 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  padding-top: 12%;
+  padding-bottom: 10%; }
+
+.jumbotroncontact {
+  margin-bottom: 0;
+  background-image: url("/img/coffeecontact.jpg");
+  background-position: 0 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  padding-top: 12%;
+  padding-bottom: 10%; }
+
+.jumbotronregister {
+  margin-bottom: 0;
+  background-image: url("/img/coffeeregister.jpg");
+  background-position: 0 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  padding-top: 12%;
+  padding-bottom: 10%; }
+
+.btn {
+  font-family: "Raleway", sans-serif;
+  background-color: #000B29;
+  color: #D70026; }
+  .btn:hover {
+    background: #D70026;
+    color: #EDB83d; }
+
+.fa {
+  font-size: 2.5em;
+  padding-top: 20px;
+  color: #D70026;
+  padding-top: 20px; }
+  .fa:hover {
+    color: #D70026; }
+
+.navbar-default .fa {
+  color: #FFF; }
+  .navbar-default .fa:hover {
+    color: #EDB83d; }
+
+.fa.fa-trash-o {
+  font-size: 1.5em; }
+
+.inner.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 60px;
+  font-family: "Raleway", sans-serif; }
+
+#contact {
+  padding: 5px 0; }
+
+.contact-text {
+  margin: 45px auto; }
+
+.mail-message-area {
+  width: 100%;
+  padding: 0 15px; }
+
+.mail-message {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8) !important;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  margin: 0 auto;
+  border-radius: 0; }
+
+.not-visible-message {
+  height: 0;
+  opacity: 0; }
+
+.visible-message {
+  height: auto;
+  opacity: 1;
+  margin: 25px auto 0; }
+
+/* Input Styles */
+.form {
+  width: 100%;
+  padding: 15px;
+  background: #f8f8f8;
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom: 25px;
+  color: #727272 !important;
+  font-size: 13px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  font-family: "Ravi Prakash", cursive; }
+
+.form:focus {
+  color: white;
+  outline: none;
+  border: 1px solid #F8F5F2; }
+
+.textarea {
+  height: 200px;
+  max-height: 200px;
+  max-width: 100%; }
+
+.button:hover {
+  background: #F8F5F2;
+  color: white; }
+
+/* Send Button Styles */
+.form-btn {
+  width: 180px;
+  display: block;
+  height: auto;
+  padding: 15px;
+  color: #D70026;
+  background: #000B29;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: auto;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Ravi Prakash", cursive; }
+
+.form-btn:hover {
+  background: #D70026;
+  color: #000B29;
+  border: none; }
+
+.form-btn:active {
+  opacity: 0.9; }
+
+center {
+  margin-top: 330px; }
+
+input {
+  position: relative;
+  z-index: 9999; }
+
+.formregister {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 40px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 25px; }
+
+.btn-defaultlogin {
+  padding: 8px 12px;
+  color: #FFF;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+  margin-top: 15px; }
+
+label {
+  display: block;
+  margin-bottom: 8px; }
+
+label.light {
+  font-weight: 300;
+  display: inline; }
+
+.login {
+  color: #F8F5F2;
+  font-family: "Ravi Prakash", cursive;
+  text-shadow: #D70026 0.3em 0.3em 0.3em; }
+
+.loginform {
+  background-color: #000B29; }
+
+.recover {
+  color: #D70026; }
+  .recover:hover {
+    color: #EDB83d; }
+
+.registerredirect {
+  color: #D70026; }
+  .registerredirect:hover {
+    color: #EDB83d; }
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Raleway", sans-serif; }
+
+label.light {
+  font-weight: 300;
+  display: inline; }
+
+.sidebar {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-right: 1px solid #eee; }
+
+/*# sourceMappingURL=main.css.map */

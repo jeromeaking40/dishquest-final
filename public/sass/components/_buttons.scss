@@ -1,0 +1,16 @@
+.btn {
+    font-family     : $stack-raleway;
+    background-color: $primary-color;
+    color           : $secondary-color;
+
+    &:hover {
+        background: $secondary-color;
+        color     : $third-color;
+    }
+}
+// .input-holder {
+//     position: relative;
+// }
+// .input-group.search {
+//     padding-top: 50px;
+// }

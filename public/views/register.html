@@ -1,0 +1,18 @@
+<!--REGISTRATION FORM-->
+<form class="formregister" ng-submit="dishquest.siteRegister()">
+  <legend class="text-center"> Sign Up</legend>
+
+    <label for="name">Name</label>
+    <input class="form-control" type="name" ng-model="dishquest.newUser.name" placeholder=" Enter your name.."><br>
+
+    <label for="email">Email</label>
+    <input class="form-control" type="email" ng-model="dishquest.newUser.email" placeholder=" Enter your email.."><br>
+
+    <label for="password">Password</label>
+    <input class="form-control" type="password" ng-model="dishquest.newUser.password" placeholder="Enter your password..">
+
+    <button class="btn btn-defaultlogin register" type="submit">SIGNUP</button>
+    <hr>
+    <a href="/views/login.html"><h5 class="registerredirect">Already registered? Log In</h5></a>
+
+</form>

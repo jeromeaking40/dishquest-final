@@ -1,0 +1,20 @@
+h1 {
+    font-family: $stack-raleway;
+}
+
+a {
+    font-family: $stack-raleway;
+    color      : $secondary-color;
+
+    &:hover {
+        color: $third-color;
+    }
+}
+
+.about {
+    font-family: $stack-ravi;
+}
+
+p {
+    font-family: $stack-raleway;
+}
