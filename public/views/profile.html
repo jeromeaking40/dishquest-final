@@ -1,23 +1,9 @@
 <!--PROFILE INTRO-->
-<div class="page-header text-center" ng-init="dishquest.info()">
-    <h1>Profile</h1>
+<div class="text-center" ng-init="dishquest.info()">
+    <h1>Your Info</h1><hr class="style2">
     <h4>Name:
         {{dishquest.profile.name}}</h4>
     <h4>Email:
         {{dishquest.profile.email}}</h4>
 </div>
 <!--END OF PROFILE INTRO-->
-
-<!--FAVORITE PLACES-->
-<h4 class="text-center">Favorite Places:</h4>
-<ul>
-    <li class="col-xs-6" ng-repeat="fav in dishquest.profile.favoritePlaces track by $index">
-        {{fav}}
-        <i class="fa fa-trash-o fa-lg" ng-click="dishquest.deleteVenue($index)"></i>
-    </li>
-</ul>
-<!--END OF FAVORITE PLACES -->
-
-
-</div>
-</div>

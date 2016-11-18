@@ -90,6 +90,9 @@ function dishquestController($http, dishquestFactory) {
         $http.get('/api/search/users?name=' + dishquest.searchUsers).then(function(res) {
             dishquest.loading = false;
             dishquest.friends = res.data;
+            if (dishquest.friends.length === 0) {
+                alertify.alert("Dishquest", "Sorry we can't find any one with that name. Please choose another friend");
+            }
             console.log(dishquest.friends);
         }, function(err) {
             // DO NOT FORGET!!!! A ERROR CALLBACK
@@ -121,6 +124,12 @@ function dishquestController($http, dishquestFactory) {
 
     //DELETE ITEM FROM FAV PLACES
     dishquest.deleteVenue = function($index) {
+        alertify.confirm("DishQuest", "Are you sure you want to delete this place?", function() {
+            alertify.success('Ok');
+        }, function() {
+            alertify.error('Cancel');
+        });
+
         $http({
             method: 'PUT',
             url: '/profile',

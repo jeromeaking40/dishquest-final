@@ -1,0 +1,9 @@
+<!--FAVORITE PLACES-->
+<h1 class="text-center">Favorite Places:</h1>
+<ul>
+    <li class="col-sm-6" ng-repeat="fav in dishquest.profile.favoritePlaces track by $index">
+        {{fav}}
+        <i class="fa fa-trash-o fa-lg" ng-click="dishquest.deleteVenue($index)"></i>
+    </li>
+</ul>
+<!--END OF FAVORITE PLACES -->
