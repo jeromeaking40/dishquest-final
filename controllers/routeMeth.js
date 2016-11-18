@@ -46,7 +46,7 @@ module.exports = {
                     } else {
                         req.session = user;
                         res.send({message: 'Login success!'});
-                        // res.redirect('/profile');
+
                     }
                 });
             }

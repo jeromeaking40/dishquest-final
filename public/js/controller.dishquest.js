@@ -12,7 +12,7 @@ function dishquestController($http, dishquestFactory) {
     //CREATE NEW USER
     dishquest.siteRegister = function() {
         dishquestFactory.createUser(dishquest.newUser).then(function(responseData) {
-            console.log('Response is', responseData);
+            // console.log('Response is', responseData);
         }, function(err) {
             console.error('There was an err ', err);
         });

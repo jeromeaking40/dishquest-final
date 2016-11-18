@@ -7,7 +7,6 @@ angular.module('module.login', []).controller('controller.login', [
 
         //SEND USER PROFILE IF AUTHENICATED
         login.submit = function() {
-            console.log(login);
             $http({
                 method: 'POST',
                 url: '/login',
