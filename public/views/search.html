@@ -21,9 +21,10 @@
 
             <!--VENUE SEARCH-->
             <div ng-repeat="venue in dishquest.foodInfo.businesses">
+
                 <div class="row marketing">
-                    <div class="col-lg-6 text-center">
-                        <h2>
+                    <div class="col-lg-6 offset-3 text-center">
+                        <h2 class="searchplaces">
                             <p>
                                 Name:
                                 {{ venue.name }}</p><br>
@@ -44,7 +45,7 @@
                                 Category:</p>
                             <p ng-repeat="category in venue.categories track by $index">
                                 {{category}}</p><br>
-                            <p>Location:</p><hr class="style2">
+                            <p>Location:</p>
                             <p ng-repeat="locate in venue.location.display_address">
                                 {{locate}}</p>
                             <button class='btn' ng-click="dishquest.addVenue(venue.name)">Add to favorite places</button>
@@ -57,4 +58,5 @@
 
         </div>
     </div>
+  </div>
 </div>

@@ -120,6 +120,7 @@ function dishquestController($http, dishquestFactory) {
         });
 
         console.log("Place was added");
+
     };
 
     //DELETE ITEM FROM FAV PLACES

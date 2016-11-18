@@ -49,6 +49,17 @@ h5 {
     }
 }
 
+.searchplaces {
+    font-size: 20px;
+}
+
+.container.results {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    flex-direction : column;
+}
+
 .page-header {
     border-bottom: 3px double #8c8b8b;
 }
