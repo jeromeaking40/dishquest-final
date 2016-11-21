@@ -59,7 +59,7 @@ function dishquestController($http, dishquestFactory) {
             // when things go bad, you need this!!!!!!!!
             console.error(err);
         });
-        dishquest.search = "";
+        dishquest.search = '';
 
     };
 
@@ -86,7 +86,7 @@ function dishquestController($http, dishquestFactory) {
     dishquest.searchFriends = function() {
         //LOADING GIF
         dishquest.loading = true;
-        console.log("Searching for friends: ", dishquest.searchUsers);
+        console.log('Searching for friends: ', dishquest.searchUsers);
         $http.get('/api/search/users?name=' + dishquest.searchUsers).then(function(res) {
             dishquest.loading = false;
             dishquest.friends = res.data;
@@ -99,7 +99,7 @@ function dishquestController($http, dishquestFactory) {
             // when things go bad, you need this!!!!!!!!
             console.error(err);
         });
-        dishquest.searchUsers = "";
+        dishquest.searchUsers = '';
     };
 
     // UPDATE THE USERS FAVPLACES DATA
