@@ -1,9 +1,11 @@
 <!--PROFILE INTRO-->
 <div class="text-center" ng-init="dishquest.info()">
-    <h1>Your Info</h1><hr class="style2">
-    <h4>Name:
-        {{dishquest.profile.name}}</h4>
-    <h4>Email:
-        {{dishquest.profile.email}}</h4>
+    <h1>Your Info</h1><br>
+    <h4>Name:<br>
+      <label ng-click="editing = !editing" ng-hide="editing" for="name">{{dishquest.profile.name}}</label>
+      <input ng-hide="!editing" ng-blur="editing = false; dishquest.updateUser()" type="name" ng-model="dishquest.profile.name" placeholder=" Enter your name.."><br>
+    </h4>
+    <h4>Email: <br>
+      {{dishquest.profile.email}}</h4>
 </div>
 <!--END OF PROFILE INTRO-->

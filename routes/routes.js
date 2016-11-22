@@ -12,6 +12,9 @@ module.exports = function(app) {
     //LOGIN USERS
     app.post('/login', allRoutes.login);
 
+    //UPDATE USER INFO
+    app.put('/profile/:id', allRoutes.updateUser);
+
     //LOGUT USERS
     app.get('/logout', allRoutes.logout);
 

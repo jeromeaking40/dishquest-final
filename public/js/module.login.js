@@ -3,8 +3,6 @@ angular.module('module.login', []).controller('controller.login', [
     function($http) {
         var login = this;
 
-
-
         //SEND USER PROFILE IF AUTHENICATED
         login.submit = function() {
             $http({
@@ -18,6 +16,7 @@ angular.module('module.login', []).controller('controller.login', [
                 console.info(res.data);
                 location.href = '/#/profile';
             }, function(err) {
+                alertify.alert("DishQuest", "Invalid user or password!");
                 // DO NOT FORGET!!!! an error callback
                 // when things go bad, you need this!!!!!!!!
                 console.error(err);

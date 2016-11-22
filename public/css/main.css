@@ -87,7 +87,7 @@ p {
   text-shadow: #D70026 0.3em 0.3em 0.3em;
   color: #F8F5F2;
   display: inline;
-  font-size: 25px; }
+  font-size: 30px; }
   .navbar-default .navbar-brand:hover {
     color: #EDB83d; }
 
@@ -127,7 +127,7 @@ li a {
   background-repeat: no-repeat;
   color: #fff;
   text-shadow: black 0.3em 0.3em 0.3em;
-  padding-top: 15%;
+  padding-top: 10%;
   padding-bottom: 15%; }
 
 .jumbotroncontact {
@@ -213,7 +213,7 @@ li a {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  font-family: "Ravi Prakash", cursive; }
+  font-family: "Raleway", sans-serif; }
 
 .form:focus {
   color: white;
@@ -235,7 +235,7 @@ li a {
   display: block;
   height: auto;
   padding: 15px;
-  color: #D70026;
+  color: #FFF;
   background: #000B29;
   border: none;
   border-radius: 3px;
@@ -247,11 +247,11 @@ li a {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  font-family: "Ravi Prakash", cursive; }
+  font-family: "Raleway", sans-serif; }
 
 .form-btn:hover {
   background: #D70026;
-  color: #000B29;
+  color: #EDB83d;
   border: none; }
 
 .form-btn:active {

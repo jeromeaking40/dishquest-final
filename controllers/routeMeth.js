@@ -88,6 +88,22 @@ module.exports = {
             }
         });
     },
+    //UPDATE USER INFORMATION
+    updateUser: function(req, res) {
+        var id = req.params.id;
+        var user = req.body;
+        if (user && user._id !== id) {
+            return res.status(500).json({err: "Ids do not match"});
+        }
+        User.findByIdAndUpdate(id, user, {
+            new: true
+        }, function(err, user) {
+            if (err) {
+                return res.status(500).json({err: err.message});
+            }
+            res.json({'user': user, message: 'User Updated'});
+        });
+    },
     //SEARCH FOR INFORMATION
     search: function(req, res) {
         yelp.search({
@@ -107,7 +123,6 @@ module.exports = {
     },
     //ADD PLACE TO YOUR FAVORITE PLACES
     addPlaces: function(req, res) {
-        // console.log(req.body);
         User.update({
             email: req.session.email
         }, {
@@ -121,7 +136,7 @@ module.exports = {
                 console.log(user);
             }
         });
-        res.send('Profile updated');
+        res.send(req.body);
 
     },
     //DELETE PLACE TO YOUR FAVORITE PLACES

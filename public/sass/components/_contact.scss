@@ -52,7 +52,7 @@
     -webkit-transition: all 0.4s;
     -moz-transition   : all 0.4s;
     transition        : all 0.4s;
-    font-family       : $stack-ravi;
+    font-family       : $stack-raleway;
 }
 
 .form:focus {
@@ -77,7 +77,7 @@
     display           : block;
     height            : auto;
     padding           : 15px;
-    color             : $secondary-color;
+    color             : #FFF;
     background        : $primary-color;
     border            : none;
     border-radius     : 3px;
@@ -89,12 +89,12 @@
     box-shadow        : 0 1px 4px rgba(0,0,0, 0.10);
     -moz-box-shadow   : 0 1px 4px rgba(0,0,0, 0.10);
     -webkit-box-shadow: 0 1px 4px rgba(0,0,0, 0.10);
-    font-family       : $stack-ravi;
+    font-family       : $stack-raleway;
 }
 
 .form-btn:hover {
     background: $secondary-color;
-    color     : $primary-color;
+    color     : $third-color;
     border    : none;
 }
 
