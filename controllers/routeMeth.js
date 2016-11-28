@@ -9,7 +9,7 @@ var saveUser = require('../controllers/saveUser'),
 module.exports = {
     //REGISTER USERS
     register: function(req, res) {
-        console.log(req.body);
+        // console.log(req.body);
         var newUser = new User(req.body);
         // when this function fires, it is going to hit the pre save middleware
         newUser.save(function(err, user) {

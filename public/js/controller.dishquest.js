@@ -13,7 +13,6 @@ function dishquestController($http, dishquestFactory) {
     dishquest.siteRegister = function() {
         dishquestFactory.createUser(dishquest.newUser).then(function(responseData) {
             alertify.alert("Dishquest", "Successfully created account!");
-            // console.log('Response is', responseData);
         }, function(err) {
             console.error('There was an err ', err);
         });
@@ -169,6 +168,6 @@ function dishquestController($http, dishquestFactory) {
         });
         console.log("Deleted friend");
     };
-    
+
     //END OF CONTROLLER
  }
