@@ -34,10 +34,10 @@ mongoose.connect('mongodb://localhost/dishquest');
 Routes(app);
 
 //SERVER
-app.listen(80, function(err, req, res) {
+app.listen(8000, function(err, req, res) {
     if (err) {
         console.error('There was an error: ', err);
         process.exit(1);
     }
-    console.log('Server is running on port 80');
+    console.log('Server is running on port 8000');
 });

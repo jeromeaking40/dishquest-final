@@ -1,13 +1,21 @@
 angular.module('DishQuest').controller('dishquestCtrl', dishquestController);
 
-dishquestController.$inject = ['$http', 'dishquestFactory'];
+dishquestController.$inject = ['$http', 'dishquestFactory', '$location', '$anchorScroll'];
 
-function dishquestController($http, dishquestFactory) {
+function dishquestController($http, dishquestFactory, $location, $anchorScroll) {
     var dishquest = this;
     console.info('controller loaded');
 
     //PAGINATION
     dishquest.foodInfo = [];
+
+    dishquest.pageChanged = function(top) {
+      var old = $location.hash();
+      $location.hash('top');
+      $anchorScroll();
+      //reset to old to keep any additional routing logic from kicking in
+      $location.hash(old);
+    };
 
     //NEW USER
     dishquest.newUser = {};
@@ -53,10 +61,8 @@ function dishquestController($http, dishquestFactory) {
         console.log("Profile was updated");
     };
 
-
-
     //SEARCH FOR FOOD
-    dishquest.find = function(pageNumber) {
+    dishquest.find = function() {
         //LOADING GIF
         dishquest.loading = true;
         $http({
@@ -175,4 +181,4 @@ function dishquestController($http, dishquestFactory) {
     };
 
     //END OF CONTROLLER
- }
+}

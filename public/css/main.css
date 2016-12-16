@@ -149,6 +149,30 @@ li a {
     background: #D70026;
     color: #EDB83d; }
 
+.pagination > .active > a {
+  z-index: 3;
+  color: #D70026;
+  cursor: default;
+  background-color: #000B29;
+  /* border-color: #337ab7; */ }
+  .pagination > .active > a:hover {
+    background: #D70026;
+    color: #EDB83d; }
+
+.pagination > li > a {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #D70026;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd; }
+  .pagination > li > a:hover {
+    background: #D70026;
+    color: #EDB83d; }
+
 .fa {
   font-size: 2.5em;
   padding-top: 20px;

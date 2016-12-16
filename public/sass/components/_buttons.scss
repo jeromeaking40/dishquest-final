@@ -8,9 +8,32 @@
         color     : $third-color;
     }
 }
-// .input-holder {
-//     position: relative;
-// }
-// .input-group.search {
-//     padding-top: 50px;
-// }
+
+.pagination > .active > a {
+    z-index         : 3;
+    color           : #D70026;
+    cursor          : default;
+    background-color: #000B29;
+    /* border-color: #337ab7; */
+    &:hover {
+        background: $secondary-color;
+        color     : $third-color;
+    }
+}
+
+.pagination > li > a {
+    position        : relative;
+    float           : left;
+    padding         : 6px 12px;
+    margin-left     : -1px;
+    line-height     : 1.42857143;
+    color           : #D70026;
+    text-decoration : none;
+    background-color: #fff;
+    border          : 1px solid #ddd;
+
+    &:hover {
+        background: $secondary-color;
+        color     : $third-color;
+    }
+}
