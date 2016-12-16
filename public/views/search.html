@@ -20,7 +20,8 @@
             <img src="../img/dishquest.gif" class="loading" ng-show="dishquest.loading">
 
             <!--VENUE SEARCH-->
-            <div ng-repeat="venue in dishquest.foodInfo.businesses">
+            <div dir-paginate="venue in dishquest.foodInfo.businesses| itemsPerPage: 10">
+                <!-- <div ng-repeat="venue in dishquest.foodInfo.businesses"> -->
                 <h2 class="searchplaces">
                     <p>
                         Name:
@@ -49,7 +50,7 @@
                     <hr class="style2">
                 </h2>
             </div>
-
+            <dir-pagination-controls boundary-links="true" direction-links="true"></dir-pagination-controls>
             <!--END OF VENUE SEARCH -->
 
         </div>

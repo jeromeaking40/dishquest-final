@@ -112,9 +112,10 @@ module.exports = {
             categories: 'food',
             radius: 40000,
             open_now: true,
-            limit: 20
+            sort_by: "rating",
+            limit: 40
         }).then(function(data) {
-            console.log(data);
+            console.log("There are", data.length + " results");
             res.send(data);
         }).catch(function(err) {
             console.error(err);

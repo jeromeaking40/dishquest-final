@@ -1,4 +1,4 @@
-angular.module('DishQuest', ['ngRoute'])
+angular.module('DishQuest', ['ngRoute', 'angularUtils.directives.dirPagination'])
     .config(Router);
 
 Router.$inject = ['$routeProvider'];

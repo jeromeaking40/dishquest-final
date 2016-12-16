@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular-utils-pagination": "^0.11.1",
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
     "client-sessions": "^0.7.0",

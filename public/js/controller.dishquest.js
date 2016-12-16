@@ -6,6 +6,9 @@ function dishquestController($http, dishquestFactory) {
     var dishquest = this;
     console.info('controller loaded');
 
+    //PAGINATION
+    dishquest.foodInfo = [];
+
     //NEW USER
     dishquest.newUser = {};
 
@@ -50,8 +53,10 @@ function dishquestController($http, dishquestFactory) {
         console.log("Profile was updated");
     };
 
+
+
     //SEARCH FOR FOOD
-    dishquest.find = function() {
+    dishquest.find = function(pageNumber) {
         //LOADING GIF
         dishquest.loading = true;
         $http({
@@ -63,7 +68,7 @@ function dishquestController($http, dishquestFactory) {
         }).then(function(res) {
             dishquest.loading = false;
             dishquest.foodInfo = res.data;
-            console.log(dishquest.foodInfo);
+            // console.log(dishquest.foodInfo);
         }, function(err) {
             // DO NOT FORGET!!!! A ERROR CALLBACK
             console.error(err);
