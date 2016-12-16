@@ -24,6 +24,8 @@ module.exports = function(app) {
     //DELETE FRIENDS
     app.put('/showfriends', allRoutes.deleteFriend);
 
+    //SEE FRIENDS PROFILE
+    app.get('/friendpage/:id', allRoutes.friendsPage);
 
     //ADD FAV PLACES
     app.post('/profile', allRoutes.addPlaces);

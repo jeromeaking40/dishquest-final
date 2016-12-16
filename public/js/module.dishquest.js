@@ -30,6 +30,10 @@ function Router($routeProvider) {
         .when("/showfriends/", {
             templateUrl: "/views/showfriends.html",
         })
+        .when("/friendpage/:id", {
+            templateUrl: "/views/friendpage.html",
+            controller: "friendCtrl as friend"
+        })
         .when("/profile", {
             templateUrl: "/views/profile.html"
         })

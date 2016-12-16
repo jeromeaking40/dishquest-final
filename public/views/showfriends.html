@@ -1,7 +1,7 @@
 <h1 class="text-center">Friends:</h1>
 <ul>
     <li class="col-xs-6" ng-repeat="friend in dishquest.profile.friends track by $index">
-        {{friend.name}} {{friend.favoritePlaces}}
+        <a href="/friendpage/{{friend._id}}">{{friend.name}}</a>
         <i class="fa fa-trash-o fa-lg" ng-click="dishquest.deleteFriend($index)"></i>
     </li>
 </ul>
